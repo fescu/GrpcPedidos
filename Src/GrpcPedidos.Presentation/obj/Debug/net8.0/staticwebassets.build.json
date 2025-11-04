@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "c16cjpl8GtniYtDVH1NGwT4ArEfh4nrN+BVxdPYjiWA=",
+  "Source": "GrpcPedidos.Presentation",
+  "BasePath": "_content/GrpcPedidos.Presentation",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

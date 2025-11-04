@@ -1,0 +1,11 @@
+/Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Core/bin/Debug/net8.0/GrpcPedidos.Core.deps.json
+/Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Core/bin/Debug/net8.0/GrpcPedidos.Core.dll
+/Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Core/bin/Debug/net8.0/GrpcPedidos.Core.pdb
+/Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Core/obj/Debug/net8.0/GrpcPedidos.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Core/obj/Debug/net8.0/GrpcPedidos.Core.AssemblyInfoInputs.cache
+/Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Core/obj/Debug/net8.0/GrpcPedidos.Core.AssemblyInfo.cs
+/Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Core/obj/Debug/net8.0/GrpcPedidos.Core.csproj.CoreCompileInputs.cache
+/Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Core/obj/Debug/net8.0/GrpcPedidos.Core.dll
+/Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Core/obj/Debug/net8.0/refint/GrpcPedidos.Core.dll
+/Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Core/obj/Debug/net8.0/GrpcPedidos.Core.pdb
+/Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Core/obj/Debug/net8.0/ref/GrpcPedidos.Core.dll

@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  mongo:
+    image: mongo:6
+    container_name: mongo-pedidos
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  grpc-pedidos:
+    build:
+      context: .
+      dockerfile: Src/GrpcPedidos.Presentation/Dockerfile
+    container_name: grpc-pedidos
+    ports:
+      - "5295:5295"
+    environment:
+      - ASPNETCORE_URLS=http://+:5295
+      - ConnectionStrings__MongoDb=mongodb://mongo:27017
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+volumes:
+  mongo_data:

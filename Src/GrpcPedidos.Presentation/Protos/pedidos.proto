@@ -1,0 +1,30 @@
+
+syntax = "proto3";
+option csharp_namespace = "GrpcPedidos.Presentation";
+
+service Pedidos {
+  rpc CrearPedido (PedidoRequest) returns (PedidoReply);
+  rpc ListarPedidos (Empty) returns (PedidosReply);
+}
+
+message PedidoRequest {
+  string cliente = 1;
+  double total = 2;
+}
+
+message PedidoReply {
+  string mensaje = 1;
+}
+
+message PedidoItem {
+  string id = 1;
+  string cliente = 2;
+  double total = 3;
+  string fecha = 4;
+}
+
+message PedidosReply {
+  repeated PedidoItem pedidos = 1;
+}
+
+message Empty {}
