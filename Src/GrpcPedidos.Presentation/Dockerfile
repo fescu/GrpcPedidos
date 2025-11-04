@@ -16,7 +16,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/publish .
 
-# Exponer el puerto gRPC (ajústalo si usas otro)
+# Exponer el puerto gRPC
 EXPOSE 5295
 
 ENTRYPOINT ["dotnet", "GrpcPedidos.Presentation.dll"]
