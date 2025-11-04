@@ -1,4 +1,3 @@
-using GrpcPedidos.Application.Services;
 using GrpcPedidos.Core.Entities;
 
 namespace GrpcPedidos.Application.Services;
@@ -9,7 +8,7 @@ public class PedidoService : IPedidoService
     public PedidoService(IPedidoRepository pedidoRepository) => _repository = pedidoRepository;
     public async Task CrearPedidoAsync(string cliente, decimal total)
     {
-        var pedido = new Pedido { Cliente = cliente, Total = total };
+        var pedido = new Pedido {Cliente = cliente, Total = total };
         await _repository.CrearAsync(pedido);
     }
 
