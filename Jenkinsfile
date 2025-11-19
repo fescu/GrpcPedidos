@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git credentialsId: 'git-credentials', url: 'https://github.com/fescu/GrpcPedidos.git'
+                git url: 'https://github.com/fescu/GrpcPedidos.git'
             }
         }
 
