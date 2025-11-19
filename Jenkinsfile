@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/fescu/GrpcPedidos.git'
+                git branch: 'main', git url: 'https://github.com/fescu/GrpcPedidos.git'
             }
         }
 
