@@ -5,52 +5,32 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                checkout scm
+                git credentialsId: 'git-credentials', url: 'https://github.com/fescu/GrpcPedidos.git'
             }
         }
 
-        stage('Restore') {
-            steps {
-                sh 'dotnet restore'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                sh 'dotnet build --configuration Release'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                // estapa de pruebas eb construccion para siguiente entrega
-                // sh 'dotnet test --no-build'
-                echo "No test stage implemented."
-            }
-        }
-
-        stage('Docker Build') {
+        stage('Build Docker') {
             steps {
                 sh 'docker compose build'
             }
         }
 
-        stage('Docker Up') {
+        stage('Run Containers') {
             steps {
                 sh 'docker compose up -d'
             }
         }
 
-        stage('Show Logs') {
+        stage('Test Health Endpoint') {
             steps {
-                sh 'docker ps'
+                sh 'curl -f http://localhost:5295/check-mongo'
             }
         }
     }
 
     post {
         always {
-            echo "Pipeline finished."
+            sh 'docker compose down'
         }
     }
 }
