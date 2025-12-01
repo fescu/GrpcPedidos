@@ -13,3 +13,4 @@
 /Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Application/obj/Debug/net8.0/refint/GrpcPedidos.Application.dll
 /Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Application/obj/Debug/net8.0/GrpcPedidos.Application.pdb
 /Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Application/obj/Debug/net8.0/ref/GrpcPedidos.Application.dll
+/Users/felipe/Developer/GrpcPedidos/Src/GrpcPedidos.Application/obj/Debug/net8.0/GrpcPedidos.Application.sourcelink.json

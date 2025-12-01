@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GrpcPedidos.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44616e4eac11ee386b2e97f1beffcce866aeeaa9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be7d1afa78dade7a9714e992dd5cc6423be92dbd")]
 [assembly: System.Reflection.AssemblyProductAttribute("GrpcPedidos.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GrpcPedidos.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
