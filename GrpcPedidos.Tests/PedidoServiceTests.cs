@@ -3,6 +3,8 @@ using Xunit;
 using GrpcPedidos.Application.Services;
 using GrpcPedidos.Core.Entities;
 
+namespace GrpcPedidos.Tests;
+
 public class PedidoServiceTests
 {
     [Fact]
