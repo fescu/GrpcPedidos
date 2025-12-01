@@ -25,23 +25,19 @@ jobs:
     - name: Build solution
       run: dotnet build --configuration Release --no-restore
 
-    - name: Run unit tests
-      run: dotnet test --no-build --verbosity normal
-
     - name: Run tests with coverage
-      run: dotnet test --collect:"XPlat Code Coverage" --results-directory ./coverage
+      run: dotnet test /p:CollectCoverage=true /p:CoverletOutput=./coverage/ /p:CoverletOutputFormat=cobertura
 
-
-
-    - name: Build Docker image
-      run: docker build -t grpc-pedidos .
+    - name: Check coverage files
+      run: ls -R ./coverage
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v4
       with:
-        token: ${{ secrets.CODECOV_TOKEN }} 
-        files: ./coverage/**/coverage.cobertura.xml
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: ./coverage/coverage.cobertura.xml
         flags: unittests
         fail_ci_if_error: true
-        
 
+    - name: Build Docker image
+      run: docker build -t grpc-pedidos .
