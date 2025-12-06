@@ -3,6 +3,7 @@
 # Participantes
 
 Andres Felipe Escudero Gutierrez
+William Andres Dussan Gonzalez
 
 ![CI](https://github.com/fescu/GrpcPedidos/actions/workflows/ci.yml/badge.svg)
 [![codecov](https://codecov.io/gh/fescu/GrpcPedidos/branch/main/graph/badge.svg)](https://codecov.io/gh/fescu/GrpcPedidos)
